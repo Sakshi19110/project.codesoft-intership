@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f0f8ff;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .nav-left span {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #45fc25;
+    }
+
+    .nav-right a {
+      color: #2575fc;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+      font-size: 0.95em;
+      padding: 6px 10px;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section:nth-child(even) {
+      background-color: #e6f2ff;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-box h3 {
+      color: #6a11cb;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #2575fc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-right a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar with Logo -->
+  <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo" />
+      <span>MyLandingPage</span>
+    </div>
+    <div class="nav-right">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Creative Landing Page</h1>
+    <p>Design. Develop. Deliver.</p>
+  </header>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We create modern, responsive, and elegant web solutions to bring your ideas to life.</p>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Our Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>🚀 Fast Performance</h3>
+        <p>Optimized for speed and efficiency to give the best user experience.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🎨 Creative Design</h3>
+        <p>Colorful, clean, and modern design layout that captures attention.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📱 Mobile Friendly</h3>
+        <p>Looks great on all devices including phones and tablets.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🔒 Secure</h3>
+        <p>Built with the best practices in security to keep your data safe.</p>
+      </div>
+      <div class="feature-box">
+        <h3>⚙️ Easy to Customize</h3>
+        <p>Modular code structure allows easy customization and updates.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📈 SEO Friendly</h3>
+        <p>Structured content and best practices to improve search engine visibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have a project in mind? Let’s build something amazing together!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyLandingPage. Designed with ❤️ by Sakshi Sushant.</p>
+  </footer>
+
+</body>
+</html>
